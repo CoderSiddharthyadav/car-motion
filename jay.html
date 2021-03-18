@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .wheel {
+            left: 50%;
+            bottom: 178px;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+
+        }
+
+        .wheel img {
+            width: 180px;
+            height: 180px;
+            animation: wheel 1s linear infinite;
+        }
+
+        .back-wheel {
+            left: -168px;
+            bottom: 12px;
+            margin-left: -419px;
+            position: absolute;
+
+        }
+
+        .front-wheel {
+            left: 80px;
+            bottom: 12px;
+            margin-left: -56px;
+            position: absolute;
+        }
+
+        .up-wheel {
+            bottom: 165px;
+            position: absolute;
+
+        }
+
+        .down-wheel {
+            bottom: 165px;
+            margin-left: 200px;
+            position: absolute;
+        }
+
+        @keyframes wheel {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .rode {
+            width: 650%;
+            height: 580px;
+            position: absolute;
+            display: block;
+            background-image: url(path1.jpg);
+            /* background-repeat: repeat; */
+            bottom: 0;
+
+            z-index: -1;
+            animation: m 1s linear infinite;
+
+        }
+
+        @keyframes m {
+            100% {
+                transform: translateX(-1400px);
+            }
+        }
+
+        .car {
+            width: 400%;
+            height: 500px;
+            background-image: url(car1.png);
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="car"></div>
+    <div class="rode"></div>
+
+    <div class="wheel">
+
+        <img src="wheel.png" class="back-wheel">
+        <img src="wheel.png" class="front-wheel">
+        <!-- <img src="wheel.png" class="up-wheel">  -->
+        <!-- <img src="wheel.png" class="down-wheel">  -->
+    </div>
+    <audio src="C:\Users\lenovo\Music\YTVdoMp3Music\Ab julm na sahegi yaro bhim Army DJ Song.mp3" controls autoplay
+        loop></audio>
+</body>
+
+</html>
